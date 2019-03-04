@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html>
+  <head>
+    <title>Blog</title>
+
+<!-- Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+
+    <!-- Medium style editor -->
+    <script src="//cdn.jsdelivr.net/npm/medium-editor@5.23.2/dist/js/medium-editor.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@5.23.2/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <!-- <div class="container">
+    <div class="dot dot-1"></div>
+    <div class="dot dot-2"></div>
+    </div> -->
+
+    <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="navbar-nav align-items-center">
+      <a class="navbar-brand" href="{%url 'post_list'%}">My Tech Blog</a>
+      <a class="nav-item nav-link" href="{%url 'about' %}">About</a>
+
+      <a class="nav-item nav-link" href="https://github.com/cyberpunk-akash">GitHub</a>
+        <a class="nav-item nav-link" href="https://www.linkedin.com/in/akash-hegde-60631914b/">LinkedIn</a>
+      </div>
+
+      <div class="navbar-nav align-items-center">
+        {%if user.is_authenticated%}
+        <a class = "nav-item na-link" href="{%url 'post_new'%}">New Post</a>
+        <a class = "nav-item nav-link" href="{%url 'post_draft_list'%}">Drafts</a>
+        <a class="nav-item nav-link" href="{%url 'logout'%}">Log out</a>
+        <a>Welcome : {{user.username}}</a>
+
+        {%else%}
+        <a class="nav-item nav-link" href="{%url 'login'%}">Login</a>
+        {%endif%}
+      </div>
+    </div>
+  </nav>
+
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="blog_posts">
+            {%block content%}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

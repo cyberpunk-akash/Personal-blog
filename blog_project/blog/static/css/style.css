@@ -1,0 +1,87 @@
+/* *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/*
+body {
+  position: relative;
+  background-color: #e74c3c;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+/* .container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: rotate-move 3s ease-in-out infinite;
+} */
+
+/* .dot {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(6px) contrast(200%);
+  bacface-visibility: hidden;
+  overflow: hidden;
+}
+
+.dot-1 {
+  animation: dot-1-move 3s ease infinite;
+}
+
+.dot-2 {
+  animation: dot-2-move 3s ease infinite;
+}
+
+@keyframes dot-1-move {
+  0% {tranform: scale(1) tranlate(0, 0);}
+  50% {transform: scale(.5) translate(-50%, 40%);}
+}
+
+@keyframes dot-2-move {
+  0% {tranform: scale(1) tranlate(0, 0);}
+  50% {transform: scale(.5) translate(-50%, -140%);}
+}
+
+@keyframes rotate-move {
+  0% {transform: rotate(-10deg);}
+  100% {transform: rotate(360deg);}
+} */
+
+  .centerstage
+{
+  margin-left:0px;
+  margin-right:0px
+}
+
+.postdate
+{
+  text-align: center;
+}
+
+.posttitle
+{
+  font-size:3em;
+  text-align:center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.postcontent
+{
+  font-family: 'Source Code Pro', monospace;
+  font-size:1.5em;
+
+}
+.btn-comment
+{
+  position:absolute;
+  right:0px;
+}

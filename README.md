@@ -16,8 +16,11 @@ To use the project, you need to follow these steps after cloning:
 6. Go to directory 'blog_project' which has a file 'manage.py'
 7. Run 'python manage.py migrate' on the terminal
 8. Run 'python manage.py makemigrations post'
+
 9.Run 'python manage.py migrate' again
+
 10.Run 'python manage.py runserver'
+
 11.The output of the previous command is an URL, copy the URL on your browser and run, now you can use the web application.
 
 

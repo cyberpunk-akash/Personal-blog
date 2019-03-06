@@ -15,7 +15,7 @@ To use the project, you need to follow these steps after cloning:
 5. Run 'npm install medium-editor'
 6. Go to directory 'blog_project' which has a file 'manage.py'
 7. Run 'python manage.py migrate' on the terminal
-8. Run 'python manage.py makemigrations post'
+8. Run 'python manage.py makemigrations blog'
 
 9.Run 'python manage.py migrate' again
 

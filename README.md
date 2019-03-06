@@ -12,8 +12,8 @@ To use the project, you need to follow these steps after cloning:
 2. Install django2
 3. Install a text editor(preferably Atom or Sublime) to view the files.
 4. Install pip
-5. pip install libraries like misaka, django-boostrap4
-6. Go to directory 'Blog' which has a file 'manage.py'
+5. Run 'npm install medium-editor'
+6. Go to directory 'blog_project' which has a file 'manage.py'
 7. Run 'python manage.py migrate' on the terminal
 8. Run 'python manage.py makemigrations post'
 9.Run 'python manage.py migrate' again

@@ -22,4 +22,4 @@ You need to follow these steps after cloning:
   python manage.py migrate
   python manage.py runserver
 ```
-- The output of the last command is an URL, you can use this URL to run the web application on your system locally. Thanks for visiting! I hope it was worth time :)
+- The output of the last command is an URL, you can use this URL to run the web application on your system locally.
